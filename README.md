@@ -11,7 +11,7 @@ Library Dependencies (should all come with a basic Python installation):
 
 To download, click the green "code" button, and then click "Download ZIP." Once downloaded, please unzip the folder into the desired location. Open the terminal to access your command line interface. In your command line interface, navigate to the folder where you unzipped the download. Type the following into the command line:  
 
-`python .\chatbot.py`    
+`python .\chatbot\chatbot.py`    
 
 The chatbot should greet you. Type your answers to the chatbot's questions into the command line interface. 
 
