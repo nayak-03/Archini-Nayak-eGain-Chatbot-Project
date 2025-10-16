@@ -9,7 +9,7 @@ Library Dependencies (should all come with a basic Python installation):
 - re (regex)
 - json (for .json file parsing)  
 
-Click the green "code" button, and then click "Download ZIP." Once downloaded, please unzip the folder into the desired location. Open the terminal to access your command line interface. Navigate to the folder into where you unzipped the download. Type the following into the command line:  
+Click the green "code" button, and then click "Download ZIP." Once downloaded, please unzip the folder into the desired location. Open the terminal to access your command line interface. In your command line interface, navigate to the folder where you unzipped the download. Type the following into the command line:  
 
 `python .\chatbot.py`    
 
