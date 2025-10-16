@@ -1,0 +1,28 @@
+[
+    {
+        "Full Name" : "Eric Smit",
+        "Current Location": "190 N South Street, Mytown, CA 12345", 
+        "Expected Delivery Date": "August 3, 2025", 
+        "Status": "Delayed", 
+        "Tracking Number" : 1234567890
+
+    }, 
+
+    {
+        "Full Name": "Ashutosh Roy",
+        "Current Location": "321 N Compound Ave, Sunnyvale, CA 12345", 
+        "Expected Delivery Date": "November 11, 2025",
+        "Status": "On Track",
+        "Tracking Number" : 9876543210
+
+    }, 
+
+    {
+        "Full Name": "Anand Subramaniam",
+        "Current Location": "7871 S North Ln, Palo Alto, CA 12345", 
+        "Expected Delivery Date": "October 15, 2025",
+        "Status": "Delivered",
+        "Tracking Number" : 3453453456
+
+    }
+]
