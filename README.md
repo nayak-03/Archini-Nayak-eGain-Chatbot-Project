@@ -44,9 +44,8 @@ Additionally, I prioritized human-readability. I chose descriptive variable and 
 ---
 
 ### Exception Safety
-
-A smooth and error-free user experience reflects well on the company. The customer should never have a broken or buggy interface.   
-Since users can often provide invalid or incomplete inputs, I wanted robust error handling. Examples include:
+  
+I wanted the user experience to be smooth and error-free. Since users can often provide invalid or incomplete inputs, I wanted robust error handling. Examples include:
 
 - Accepting only “yes” or “no” responses for "yes or no" questions.
 - Identifying correctly formatted tracking numbers, and allowing retries for mistyped numbers.
