@@ -47,7 +47,7 @@ Additionally, I prioritized human-readability. I chose descriptive variable and 
   
 I wanted the user experience to be smooth and error-free. Since users can often provide invalid or incomplete inputs, I wanted robust error handling. Examples include:
 
-- Accepting only “yes” or “no” responses for "yes or no" questions.
+- Accepting only “yes” or “no” responses for "yes or no" questions, but also handling casing ("Yes" and "YES" are the treated the same) and stripping ("Yes " and "Yes" are also treated the same).
 - Identifying correctly formatted tracking numbers, and allowing retries for mistyped numbers.
 - Validating names to exclude numeric characters.
 - Verifying that email addresses follow standard email address formatting.
