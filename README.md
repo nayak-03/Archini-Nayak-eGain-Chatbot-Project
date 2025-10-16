@@ -19,15 +19,13 @@ The chatbot should greet you. Type your answers to the chatbot's questions into 
 
 ### Overall Approach
 
-I chose to build a package tracking chatbot that balances helpfulness with security. 
-
-For security reasons, the chatbot only retrieves and displays package information when a valid tracking number is provided. If the user does not have one, the chatbot instead guides them through a short conversation to collect relevant details (e.g., name, email, and issue type) that a support agent can later use for investigation.
-
-The chatbot also helps the customer solve their own problem. For example, it reminds users to check their spam or junk folders for tracking emails, and allows them multiple attempts to enter a correct tracking number before escalating to support. 
+I chose to build a package tracking chatbot that balances helpfulness with security. If given a tracking number, the chatbot is able to look it up in a database of packages. If not, the chatbot is able to file a service request on the user's behalf.
 
 ---
 
 ### Technical Approach
+
+For security reasons, the chatbot only retrieves and displays package information when a valid tracking number is provided.
 
 Each user scenario is contained in its own function, which manages both logic and exception handling internally. The main flow function contains only high-level conversation logic (following the chatbot flowchart) and does not handle user messages or exceptions explicitly. This isolation makes for clean, modular code flow that is easy to maintain and add to. 
 
@@ -63,7 +61,7 @@ Another challenge was implementing correct input validation. I found that using 
 If given more time, I would focus on two main enhancements:
 
 1. Secure email/phone number access:
-   Implementing a secure way for users to retrieve package information using additional identifiers such as an email or a phone number, combined with one-time passwords or two-factor auth. This would allow users without their tracking numbers to access updates using the bot as well.
+   In my initial brainstorm, I briefly considered a way for users to retrieve package information using additional identifiers such as an email or a phone number. However I realized that this functionality was insecure and could be abused, so I decided against including it in the prototype. In the future, I would want to implement one-time passwords or two-factor auth, to allow users without their tracking numbers to access updates using the bot as well.
 
 2. Complaint submission system:
    Adding a system for the complaint data to be properly stored. Currently, the chatbot collects information, but doesn't store it anywhere. 
